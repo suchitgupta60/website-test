@@ -1,0 +1,193 @@
+<html>
+  <head>
+<script>window.isMobile = false;</script>
+<script>window.isTablet = false;</script>
+
+<script src="https://code.createjs.com/easeljs-0.8.0.min.js"></script>
+<script src="https://code.createjs.com/tweenjs-0.6.0.min.js"></script>
+<script src="https://code.createjs.com/movieclip-0.8.0.min.js"></script>
+<script>
+
+(function (lib, img, cjs) {
+
+var p; // shortcut to reference prototypes
+
+// stage content:
+(lib.Triangle = function() {
+  this.initialize();
+
+  // Layer 1
+  this.instance = new lib.Master();
+  this.instance.setTransform(126.7,109.7,1,1,0,0,0,126.7,109.7);
+
+  this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,253.4,219.4);
+
+
+// symbols:
+(lib.Base = function() {
+  this.initialize();
+
+  // Layer 1
+  this.shape = new cjs.Shape();
+  this.shape.graphics.f("#FFFFFF").s().p("AzxRJMATxgiRMATyAiRgARSPrIxS96IxRd6MAijAAAg");
+  this.shape.setTransform(126.7,109.7);
+
+  this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,253.4,219.4);
+
+
+(lib.Arm = function() {
+  this.initialize();
+
+  // Layer 1
+  this.shape = new cjs.Shape();
+  this.shape.graphics.f("#FFFFFF").s().p("A3bAtIAAhZMAu2AAAIAABZg");
+  this.shape.setTransform(150,4.5);
+
+  this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,300,9);
+
+
+(lib.Master = function(mode,startPosition,loop) {
+  this.initialize(mode,startPosition,loop,{});
+
+  // Mask (mask)
+  var mask = new cjs.Shape();
+  mask._off = true;
+  mask.graphics.p("AzxRJMATxgiRMATyAiRg");
+  mask.setTransform(126.7,109.7);
+
+  // Arm
+  this.instance = new lib.Arm();
+  this.instance.setTransform(126.7,0,1,1,120,0,0,0,4.5);
+
+  this.instance.mask = mask;
+
+  this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:60,x:126.8,y:0.1},70).wait(1));
+
+  // Base
+  this.instance_1 = new lib.Base();
+  this.instance_1.setTransform(126.7,109.7,1,1,0,0,0,126.7,109.7);
+
+  this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).wait(71));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-161.6,-152.3,415,371.8);
+
+})(lib = lib||{}, images = images||{}, createjs = createjs||{});
+var lib, images, createjs;
+
+
+(function (lib2, img, cjs) {
+
+var p; // shortcut to reference prototypes
+
+// stage content:
+(lib2.Triangle_Small = function() {
+  this.initialize();
+
+  // Layer 1
+  this.instance = new lib2.Master();
+  this.instance.setTransform(30,26,0.237,0.237,0,0,0,126.7,109.5);
+
+  this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,60,52);
+
+
+// symbols:
+(lib2.Base = function() {
+  this.initialize();
+
+  // Layer 1
+  this.shape = new cjs.Shape();
+  this.shape.graphics.f("#FFFFFF").s().p("AzxRJMATxgiRMATyAiRgARSPrIxS96IxRd6MAijAAAg");
+  this.shape.setTransform(126.7,109.7);
+
+  this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,253.4,219.4);
+
+
+(lib2.Arm = function() {
+  this.initialize();
+
+  // Layer 1
+  this.shape = new cjs.Shape();
+  this.shape.graphics.f("#FFFFFF").s().p("A3bAtIAAhZMAu2AAAIAABZg");
+  this.shape.setTransform(150,4.5);
+
+  this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,300,9);
+
+
+(lib2.Master = function(mode,startPosition,loop) {
+  this.initialize(mode,startPosition,loop,{});
+
+  // Mask (mask)
+  var mask = new cjs.Shape();
+  mask._off = true;
+  mask.graphics.p("AzxRJMATxgiRMATyAiRg");
+  mask.setTransform(126.7,109.7);
+
+  // Arm
+  this.instance = new lib2.Arm();
+  this.instance.setTransform(126.7,0,1,1,120,0,0,0,4.5);
+
+  this.instance.mask = mask;
+
+  this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:0.1,rotation:90.8,y:0.1},17,cjs.Ease.get(-0.99)).to({regX:0,rotation:60,x:126.8},18,cjs.Ease.get(1)).wait(1));
+
+  // Base
+  this.instance_1 = new lib2.Base();
+  this.instance_1.setTransform(126.7,109.7,1,1,0,0,0,126.7,109.7);
+
+  this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).wait(36));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-161.6,-152.3,415,371.8);
+
+})(lib2 = lib2||{}, images = images||{}, createjs = createjs||{});
+var lib2, images, createjs;
+
+
+</script>
+<link href="/assets/application-48444821234fc68b5057ad37fb70bac8.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class='visuallyHidden'></body>
+<script src="/assets/templates-d073ead8373f5a6b7874361bbf47828c.js" type="text/javascript"></script>
+        <script>var require = {"baseUrl":"/assets","paths":{"application":"/assets/application-e8dd98f992baf47a9cf46cc9e2674e5a"},"shim":{"underscore":{"exports":"_","deps":["jquery"]},"backbone":{"deps":["underscore","jquery"],"exports":"Backbone"},"backbone.marionette":{"deps":["underscore","backbone"],"exports":"Backbone.Marionette"},"response":{"exports":"Response","deps":["jquery"]},"tweetlinkify":{"deps":["jquery"]},"raf":{"deps":["jquery"]},"center":{"deps":["jquery"]},"transit":{"deps":["jquery"]},"mousewheel":{"deps":["jquery"]},"kinetic":{"deps":["jquery"]},"easing":{"deps":["jquery"]},"mousetrap":{"deps":["jquery"]},"swiper":{"exports":"Swiper"},"spinner":{"exports":"Spinner"},"inview":{"deps":["jquery"]},"iScroll":{"deps":["jquery"]},"jquery-touch-swipe-drag":{"deps":["jquery"]},"customCursor":{"deps":["jquery"]},"widowtamer":{"deps":["jquery"],"exports":"wt"}}};</script>
+      <script data-main="application-e8dd98f992baf47a9cf46cc9e2674e5a" src="/assets/require-cbfc3f690e2109e37e09aefd8fe40332.js"></script>
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="YRy0xxoueMvI1QUNvkXOxFuKHH2iN2VTum2RMnRx33o=" name="csrf-token" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12575651-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+  window.addEventListener("load",function() {
+    setTimeout(function(){
+      window.scrollTo(0, 0);
+    }, 0);
+  });
+</script>
+    
+  </html>
+
